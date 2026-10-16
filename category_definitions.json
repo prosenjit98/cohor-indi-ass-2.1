@@ -1,0 +1,177 @@
+{
+  "primary_categories": {
+    "Hardware Issues": {
+      "description": "Physical device problems including computers, peripherals, and mobile devices",
+      "subcategories": [
+        {
+          "name": "Desktop/Laptop problems",
+          "examples": ["won't turn on", "overheating", "physical damage", "blue screen"]
+        },
+        {
+          "name": "Peripheral devices",
+          "examples": ["mouse not working", "keyboard issues", "monitor problems", "USB devices"]
+        },
+        {
+          "name": "Mobile devices",
+          "examples": ["phone issues", "tablet problems", "mobile connectivity"]
+        },
+        {
+          "name": "Printer issues",
+          "examples": ["printer offline", "print queue stuck", "paper jam", "poor print quality"]
+        }
+      ]
+    },
+    "Network & Connectivity": {
+      "description": "Network, internet, and connectivity related issues",
+      "subcategories": [
+        {
+          "name": "Wi-Fi/LAN issues",
+          "examples": ["can't connect to Wi-Fi", "ethernet not working", "network disconnects"]
+        },
+        {
+          "name": "VPN problems",
+          "examples": ["VPN won't connect", "VPN slow", "VPN authentication failed"]
+        },
+        {
+          "name": "Internet connectivity",
+          "examples": ["no internet", "can't access websites", "DNS issues"]
+        },
+        {
+          "name": "Network speed",
+          "examples": ["slow internet", "bandwidth issues", "connection drops"]
+        }
+      ]
+    },
+    "Software & Applications": {
+      "description": "Software, application, and program related issues",
+      "subcategories": [
+        {
+          "name": "Application errors",
+          "examples": ["app crashes", "error messages", "app freezes", "won't open"]
+        },
+        {
+          "name": "Installation/Updates",
+          "examples": ["can't install software", "update failed", "need software installed"]
+        },
+        {
+          "name": "License issues",
+          "examples": ["license expired", "activation error", "need license key"]
+        },
+        {
+          "name": "Performance problems",
+          "examples": ["app running slow", "high CPU usage", "memory issues"]
+        }
+      ]
+    },
+    "Account & Access": {
+      "description": "User account, login, and access permission issues",
+      "subcategories": [
+        {
+          "name": "Password reset",
+          "examples": ["forgot password", "password expired", "need password reset"]
+        },
+        {
+          "name": "Account locked",
+          "examples": ["locked out", "too many login attempts", "account disabled"]
+        },
+        {
+          "name": "Access permissions",
+          "examples": ["can't access folder", "permission denied", "need access to system"]
+        },
+        {
+          "name": "New account creation",
+          "examples": ["need new account", "new employee setup", "account provisioning"]
+        }
+      ]
+    },
+    "Security": {
+      "description": "Security related concerns and incidents",
+      "subcategories": [
+        {
+          "name": "Suspicious activity",
+          "examples": ["unauthorized access", "strange behavior", "account compromise"]
+        },
+        {
+          "name": "Malware/Virus",
+          "examples": ["virus detected", "malware warning", "system infected"]
+        },
+        {
+          "name": "Phishing reports",
+          "examples": ["suspicious email", "phishing attempt", "scam alert"]
+        },
+        {
+          "name": "Security policy questions",
+          "examples": ["security best practices", "compliance questions", "policy clarification"]
+        }
+      ]
+    },
+    "Email & Communication": {
+      "description": "Email, messaging, and communication tool issues",
+      "subcategories": [
+        {
+          "name": "Email access issues",
+          "examples": ["can't access email", "email not syncing", "email app problems"]
+        },
+        {
+          "name": "Calendar problems",
+          "examples": ["calendar not syncing", "meeting invite issues", "calendar sharing"]
+        },
+        {
+          "name": "Video conferencing",
+          "examples": ["Zoom not working", "Teams issues", "video call problems"]
+        },
+        {
+          "name": "Shared folders",
+          "examples": ["can't access shared drive", "OneDrive issues", "file sharing problems"]
+        }
+      ]
+    }
+  },
+  "priority_definitions": {
+    "Critical": {
+      "description": "System completely down, security breach, or multiple users affected",
+      "sla": "Response within 15 minutes",
+      "examples": [
+        "Complete system outage",
+        "Security breach detected",
+        "Data loss occurring",
+        "Critical business application down affecting multiple users"
+      ]
+    },
+    "High": {
+      "description": "Single user unable to work, data loss risk, or urgent business impact",
+      "sla": "Response within 2 hours",
+      "examples": [
+        "Cannot access work computer",
+        "Critical business application error for single user",
+        "Suspected malware infection",
+        "Account locked preventing work"
+      ]
+    },
+    "Medium": {
+      "description": "Workaround available, non-urgent but impacting productivity",
+      "sla": "Response within 8 hours",
+      "examples": [
+        "Application running slowly",
+        "Minor connectivity issues",
+        "Printer not working (alternatives available)",
+        "Password reset needed"
+      ]
+    },
+    "Low": {
+      "description": "General questions, feature requests, minor inconveniences",
+      "sla": "Response within 24 hours",
+      "examples": [
+        "How-to questions",
+        "Feature requests",
+        "Minor cosmetic issues",
+        "General information requests"
+      ]
+    }
+  },
+  "confidence_levels": {
+    "high": "Clear and specific issue description with identifiable category",
+    "medium": "Somewhat ambiguous but likely category identifiable",
+    "low": "Vague or unclear description requiring clarification"
+  }
+}

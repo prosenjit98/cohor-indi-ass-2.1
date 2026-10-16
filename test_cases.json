@@ -1,0 +1,261 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "category": "clear_case",
+      "input": "My laptop is not connecting to the office Wi-Fi.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Wi-Fi/LAN issues",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 2,
+      "category": "clear_case",
+      "input": "I forgot my password and need to reset it.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Password reset",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 3,
+      "category": "clear_case",
+      "input": "Microsoft Word keeps crashing when I try to open documents.",
+      "expected": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Application errors",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 4,
+      "category": "clear_case",
+      "input": "The printer on the 3rd floor is showing as offline.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Printer issues",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 5,
+      "category": "clear_case",
+      "input": "I received a suspicious email asking me to verify my bank account details.",
+      "expected": {
+        "primary_category": "Security",
+        "subcategory": "Phishing reports",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 6,
+      "category": "clear_case",
+      "input": "Can't access my email. It says authentication failed.",
+      "expected": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Email access issues",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 7,
+      "category": "clear_case",
+      "input": "VPN connection keeps dropping every few minutes.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "VPN problems",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 8,
+      "category": "clear_case",
+      "input": "My computer won't turn on at all. The power light doesn't come on.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 9,
+      "category": "clear_case",
+      "input": "Need access to the Finance shared folder for the quarterly reports.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Access permissions",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 10,
+      "category": "clear_case",
+      "input": "Zoom meeting won't start. Getting error code 5003.",
+      "expected": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Video conferencing",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 11,
+      "category": "clear_case",
+      "input": "My mouse is not working. I've tried different USB ports.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Peripheral devices",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 12,
+      "category": "clear_case",
+      "input": "Need to install Adobe Acrobat Pro on my new laptop.",
+      "expected": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Installation/Updates",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 13,
+      "category": "clear_case",
+      "input": "My account is locked after entering the wrong password too many times.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Account locked",
+        "priority": "High"
+      }
+    },
+    {
+      "id": 14,
+      "category": "clear_case",
+      "input": "Internet is extremely slow today. Takes forever to load websites.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Network speed",
+        "priority": "Medium"
+      }
+    },
+    {
+      "id": 15,
+      "category": "clear_case",
+      "input": "My antivirus is showing a virus detection alert.",
+      "expected": {
+        "primary_category": "Security",
+        "subcategory": "Malware/Virus",
+        "priority": "Critical"
+      }
+    },
+    {
+      "id": 16,
+      "category": "ambiguous",
+      "input": "Something is wrong with my computer.",
+      "expected": {
+        "primary_category": "Hardware Issues or Software & Applications",
+        "subcategory": "Unclear",
+        "priority": "Medium",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": 17,
+      "category": "ambiguous",
+      "input": "URGENT!!! Need help ASAP!!!",
+      "expected": {
+        "primary_category": "Unknown",
+        "subcategory": "Unclear issue",
+        "priority": "Medium",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": 18,
+      "category": "ambiguous",
+      "input": "Everything is slow.",
+      "expected": {
+        "primary_category": "Software & Applications or Network & Connectivity",
+        "subcategory": "Performance problems or Network speed",
+        "priority": "Medium",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": 19,
+      "category": "ambiguous",
+      "input": "The thing isn't working.",
+      "expected": {
+        "primary_category": "Unknown",
+        "subcategory": "Unclear",
+        "priority": "Medium",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": 20,
+      "category": "ambiguous",
+      "input": "Can you help me?",
+      "expected": {
+        "primary_category": "Unknown",
+        "subcategory": "General inquiry",
+        "priority": "Low",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": 21,
+      "category": "multi_issue",
+      "input": "Can't login to my computer and the printer is also not working.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Account locked or Password reset",
+        "priority": "High",
+        "note": "Should mention printer as secondary issue"
+      }
+    },
+    {
+      "id": 22,
+      "category": "multi_issue",
+      "input": "My computer is running slow, I can't access email, and I need a password reset.",
+      "expected": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Email access issues",
+        "priority": "High",
+        "note": "Email and password are likely related; performance is secondary"
+      }
+    },
+    {
+      "id": 23,
+      "category": "edge_case",
+      "input": "My computer is making weird noises and smells like burning.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "Critical"
+      }
+    },
+    {
+      "id": 24,
+      "category": "edge_case",
+      "input": "Everyone in the office lost internet connection at the same time.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Internet connectivity",
+        "priority": "Critical"
+      }
+    },
+    {
+      "id": 25,
+      "category": "edge_case",
+      "input": "How do I change the background on my desktop?",
+      "expected": {
+        "primary_category": "Software & Applications",
+        "subcategory": "General question",
+        "priority": "Low"
+      }
+    }
+  ]
+}

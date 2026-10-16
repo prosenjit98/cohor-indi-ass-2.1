@@ -1,0 +1,681 @@
+{
+  "statistics": {
+    "total_tests": 25,
+    "category_correct": 17,
+    "priority_correct": 20,
+    "both_correct": 13,
+    "by_category": {
+      "clear_case": {
+        "total": 15,
+        "correct": 9
+      },
+      "ambiguous": {
+        "total": 5,
+        "correct": 0
+      },
+      "multi_issue": {
+        "total": 2,
+        "correct": 1
+      },
+      "edge_case": {
+        "total": 3,
+        "correct": 3
+      }
+    },
+    "category_accuracy": 68.0,
+    "priority_accuracy": 80.0,
+    "overall_accuracy": 52.0
+  },
+  "test_results": [
+    {
+      "test_id": 1,
+      "category": "clear_case",
+      "input": "My laptop is not connecting to the office Wi-Fi.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Wi-Fi/LAN issues",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Wi-Fi/LAN issues",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Check the Wi-Fi settings on your laptop and ensure you are within range of the network. If the issue persists, try restarting your laptop and the router.",
+        "estimated_resolution_time": "30 minutes",
+        "input": "My laptop is not connecting to the office Wi-Fi.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": false
+      }
+    },
+    {
+      "test_id": 2,
+      "category": "clear_case",
+      "input": "I forgot my password and need to reset it.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Password reset",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Account & Access",
+        "subcategory": "Password reset",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Proceed with the password reset process.",
+        "estimated_resolution_time": "15 minutes",
+        "input": "I forgot my password and need to reset it.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 3,
+      "category": "clear_case",
+      "input": "Microsoft Word keeps crashing when I try to open documents.",
+      "expected": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Application errors",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Application errors",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Try restarting the application and your computer. If the issue persists, consider reinstalling Microsoft Word or checking for updates.",
+        "estimated_resolution_time": "1-2 hours",
+        "input": "Microsoft Word keeps crashing when I try to open documents.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 4,
+      "category": "clear_case",
+      "input": "The printer on the 3rd floor is showing as offline.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Printer issues",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Printer issues",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Check the printer connections and restart the printer. If the issue persists, contact IT support for further assistance.",
+        "estimated_resolution_time": "30 minutes",
+        "input": "The printer on the 3rd floor is showing as offline.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 5,
+      "category": "clear_case",
+      "input": "I received a suspicious email asking me to verify my bank account details.",
+      "expected": {
+        "primary_category": "Security",
+        "subcategory": "Phishing reports",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Security",
+        "subcategory": "Phishing reports",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Report the email to the IT security team and do not respond to it.",
+        "estimated_resolution_time": "1 business day",
+        "clarifying_questions": [],
+        "input": "I received a suspicious email asking me to verify my bank account details.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 6,
+      "category": "clear_case",
+      "input": "Can't access my email. It says authentication failed.",
+      "expected": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Email access issues",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Email access issues",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Reset your password or check your account settings.",
+        "estimated_resolution_time": "30 minutes",
+        "input": "Can't access my email. It says authentication failed.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 7,
+      "category": "clear_case",
+      "input": "VPN connection keeps dropping every few minutes.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "VPN problems",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "VPN problems",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Check VPN settings and network stability. If the issue persists, contact IT support for further assistance.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [],
+        "input": "VPN connection keeps dropping every few minutes.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": false
+      }
+    },
+    {
+      "test_id": 8,
+      "category": "clear_case",
+      "input": "My computer won't turn on at all. The power light doesn't come on.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "Critical",
+        "confidence": "high",
+        "suggested_action": "Check the power supply and connections. If the issue persists, escalate for hardware repair.",
+        "estimated_resolution_time": "1-2 hours",
+        "input": "My computer won't turn on at all. The power light doesn't come on.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": false
+      }
+    },
+    {
+      "test_id": 9,
+      "category": "clear_case",
+      "input": "Need access to the Finance shared folder for the quarterly reports.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Access permissions",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Shared folders",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Request access to the Finance shared folder for the quarterly reports.",
+        "estimated_resolution_time": "1-2 business days",
+        "clarifying_questions": [],
+        "input": "Need access to the Finance shared folder for the quarterly reports.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 10,
+      "category": "clear_case",
+      "input": "Zoom meeting won't start. Getting error code 5003.",
+      "expected": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Video conferencing",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Application errors",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Check for any updates for the Zoom application and try restarting the application. If the issue persists, consider reinstalling the application.",
+        "estimated_resolution_time": "30 minutes",
+        "input": "Zoom meeting won't start. Getting error code 5003.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 11,
+      "category": "clear_case",
+      "input": "My mouse is not working. I've tried different USB ports.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Peripheral devices",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Peripheral devices",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Try using a different mouse to see if the issue persists. If it does, further troubleshooting may be needed.",
+        "estimated_resolution_time": "30 minutes",
+        "input": "My mouse is not working. I've tried different USB ports.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 12,
+      "category": "clear_case",
+      "input": "Need to install Adobe Acrobat Pro on my new laptop.",
+      "expected": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Installation/Updates",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Installation/Updates",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Proceed with the installation of Adobe Acrobat Pro on the new laptop.",
+        "estimated_resolution_time": "30 minutes",
+        "input": "Need to install Adobe Acrobat Pro on my new laptop.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 13,
+      "category": "clear_case",
+      "input": "My account is locked after entering the wrong password too many times.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Account locked",
+        "priority": "High"
+      },
+      "actual": {
+        "primary_category": "Account & Access",
+        "subcategory": "Account locked",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Please follow the account recovery process or contact support to unlock your account.",
+        "estimated_resolution_time": "15 minutes",
+        "input": "My account is locked after entering the wrong password too many times.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 14,
+      "category": "clear_case",
+      "input": "Internet is extremely slow today. Takes forever to load websites.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Network speed",
+        "priority": "Medium"
+      },
+      "actual": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Network speed",
+        "priority": "Medium",
+        "confidence": "high",
+        "suggested_action": "Check your router and modem, and try restarting them. If the issue persists, contact your ISP.",
+        "estimated_resolution_time": "1-2 hours",
+        "input": "Internet is extremely slow today. Takes forever to load websites.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 15,
+      "category": "clear_case",
+      "input": "My antivirus is showing a virus detection alert.",
+      "expected": {
+        "primary_category": "Security",
+        "subcategory": "Malware/Virus",
+        "priority": "Critical"
+      },
+      "actual": {
+        "primary_category": "Security",
+        "subcategory": "Malware/Virus",
+        "priority": "High",
+        "confidence": "high",
+        "suggested_action": "Run a full system scan with your antivirus software and follow the recommended actions for any detected threats.",
+        "estimated_resolution_time": "1-2 hours",
+        "input": "My antivirus is showing a virus detection alert.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": false
+      }
+    },
+    {
+      "test_id": 16,
+      "category": "ambiguous",
+      "input": "Something is wrong with my computer.",
+      "expected": {
+        "primary_category": "Hardware Issues or Software & Applications",
+        "subcategory": "Unclear",
+        "priority": "Medium",
+        "confidence": "low"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "Medium",
+        "confidence": "low",
+        "suggested_action": "Please provide more details about the issue you are experiencing with your computer.",
+        "estimated_resolution_time": "N/A",
+        "clarifying_questions": [
+          "What specific symptoms are you noticing?",
+          "Are there any error messages?",
+          "Is the computer not turning on, or is it running slowly?"
+        ],
+        "input": "Something is wrong with my computer.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true,
+        "confidence_match": true
+      }
+    },
+    {
+      "test_id": 17,
+      "category": "ambiguous",
+      "input": "URGENT!!! Need help ASAP!!!",
+      "expected": {
+        "primary_category": "Unknown",
+        "subcategory": "Unclear issue",
+        "priority": "Medium",
+        "confidence": "low"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "High",
+        "confidence": "low",
+        "suggested_action": "Please provide more details about the specific issue you are facing with your hardware.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [
+          "What specific problem are you experiencing with your desktop/laptop?",
+          "Are there any error messages or symptoms you can describe?",
+          "Is this issue affecting your ability to work?"
+        ],
+        "input": "URGENT!!! Need help ASAP!!!",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": false,
+        "confidence_match": true
+      }
+    },
+    {
+      "test_id": 18,
+      "category": "ambiguous",
+      "input": "Everything is slow.",
+      "expected": {
+        "primary_category": "Software & Applications or Network & Connectivity",
+        "subcategory": "Performance problems or Network speed",
+        "priority": "Medium",
+        "confidence": "low"
+      },
+      "actual": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Performance problems",
+        "priority": "Medium",
+        "confidence": "low",
+        "suggested_action": "Check for any running applications that may be consuming resources and consider restarting the device.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [
+          "Is the slowness affecting all applications or just specific ones?",
+          "Have you noticed any recent changes or updates before the issue started?",
+          "Are there any error messages displayed when the slowness occurs?"
+        ],
+        "input": "Everything is slow.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true,
+        "confidence_match": true
+      }
+    },
+    {
+      "test_id": 19,
+      "category": "ambiguous",
+      "input": "The thing isn't working.",
+      "expected": {
+        "primary_category": "Unknown",
+        "subcategory": "Unclear",
+        "priority": "Medium",
+        "confidence": "low"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "Medium",
+        "confidence": "low",
+        "suggested_action": "Please provide more details about the specific issue you are experiencing.",
+        "estimated_resolution_time": "N/A",
+        "clarifying_questions": [
+          "What specific device is not working?",
+          "Are there any error messages or symptoms?",
+          "Is this issue affecting your ability to work?"
+        ],
+        "input": "The thing isn't working.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true,
+        "confidence_match": true
+      }
+    },
+    {
+      "test_id": 20,
+      "category": "ambiguous",
+      "input": "Can you help me?",
+      "expected": {
+        "primary_category": "Unknown",
+        "subcategory": "General inquiry",
+        "priority": "Low",
+        "confidence": "low"
+      },
+      "actual": {
+        "primary_category": "Low",
+        "subcategory": "General questions",
+        "priority": "Low",
+        "confidence": "low",
+        "suggested_action": "Please provide more details about the issue you need help with.",
+        "estimated_resolution_time": "N/A",
+        "clarifying_questions": [
+          "What specific issue or question do you need assistance with?"
+        ],
+        "input": "Can you help me?",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true,
+        "confidence_match": true
+      }
+    },
+    {
+      "test_id": 21,
+      "category": "multi_issue",
+      "input": "Can't login to my computer and the printer is also not working.",
+      "expected": {
+        "primary_category": "Account & Access",
+        "subcategory": "Account locked or Password reset",
+        "priority": "High",
+        "note": "Should mention printer as secondary issue"
+      },
+      "actual": {
+        "primary_category": "Account & Access",
+        "subcategory": "Account locked",
+        "priority": "High",
+        "confidence": "medium",
+        "suggested_action": "Please try resetting your password or check if your account is locked. If the issue persists, contact IT support for further assistance.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [
+          "Are you receiving any error messages when trying to log in?",
+          "Is the printer issue related to the same computer or a different one?"
+        ],
+        "input": "Can't login to my computer and the printer is also not working.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 22,
+      "category": "multi_issue",
+      "input": "My computer is running slow, I can't access email, and I need a password reset.",
+      "expected": {
+        "primary_category": "Email & Communication",
+        "subcategory": "Email access issues",
+        "priority": "High",
+        "note": "Email and password are likely related; performance is secondary"
+      },
+      "actual": {
+        "primary_category": "Software & Applications",
+        "subcategory": "Performance problems",
+        "priority": "High",
+        "confidence": "medium",
+        "suggested_action": "Investigate the performance issues and check email access. Proceed with password reset if necessary.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [
+          "Is the slow performance affecting other applications or just email?",
+          "Are you receiving any error messages when trying to access your email?",
+          "Is the password reset preventing you from accessing any critical work?"
+        ],
+        "input": "My computer is running slow, I can't access email, and I need a password reset.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": false,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 23,
+      "category": "edge_case",
+      "input": "My computer is making weird noises and smells like burning.",
+      "expected": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "Critical"
+      },
+      "actual": {
+        "primary_category": "Hardware Issues",
+        "subcategory": "Desktop/Laptop problems",
+        "priority": "Critical",
+        "confidence": "high",
+        "suggested_action": "Immediately power off the computer and disconnect it from the power source. Contact IT support for urgent assistance.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [],
+        "input": "My computer is making weird noises and smells like burning.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 24,
+      "category": "edge_case",
+      "input": "Everyone in the office lost internet connection at the same time.",
+      "expected": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Internet connectivity",
+        "priority": "Critical"
+      },
+      "actual": {
+        "primary_category": "Network & Connectivity",
+        "subcategory": "Internet connectivity",
+        "priority": "Critical",
+        "confidence": "high",
+        "suggested_action": "Investigate the internet service provider and check for outages or issues affecting the entire office.",
+        "estimated_resolution_time": "1-2 hours",
+        "clarifying_questions": [],
+        "input": "Everyone in the office lost internet connection at the same time.",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    },
+    {
+      "test_id": 25,
+      "category": "edge_case",
+      "input": "How do I change the background on my desktop?",
+      "expected": {
+        "primary_category": "Software & Applications",
+        "subcategory": "General question",
+        "priority": "Low"
+      },
+      "actual": {
+        "primary_category": "Software & Applications",
+        "subcategory": "How-to questions",
+        "priority": "Low",
+        "confidence": "high",
+        "suggested_action": "You can change the desktop background by right-clicking on the desktop, selecting 'Personalize', and then choosing 'Background'.",
+        "estimated_resolution_time": "5 minutes",
+        "clarifying_questions": [],
+        "input": "How do I change the background on my desktop?",
+        "model": "gpt-4o-mini"
+      },
+      "comparison": {
+        "category_match": true,
+        "priority_match": true
+      }
+    }
+  ]
+}
